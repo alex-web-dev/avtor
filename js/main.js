@@ -65,6 +65,7 @@ popupNext.addEventListener('click', () => {
   if (imgIndex >= galleryImages.length - 2) {
     return;
   }
+  
   imgIndex++;
   popupImgValue.src = galleryImages[imgIndex - 1].src;
 });
@@ -77,6 +78,5 @@ popupPrev.addEventListener('click', () => {
   }
 
   imgIndex--;
-
   popupImgValue.src = galleryImages[imgIndex - 1].src;
 });
