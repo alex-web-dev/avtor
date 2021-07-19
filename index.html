@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<title>Пивзавод</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500;700&family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/fonts.css">
+	<link rel="stylesheet" href="css/media.css">
+	<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+	<header class="header">
+		<div class="wrapper">
+			<div class="header__content">
+				<a class="logo" href="#">
+					<img class="logo__img" src="images/logo.png" alt="">
+				</a>
+				<nav class="menu header__menu">
+					<button class="menu__toggle"></button>
+					<ul class="menu__list">
+						<li class="menu__item"><a class="menu__link" href="#features">Наш завод</a></li>
+						<li class="menu__item"><a class="menu__link" href="#videos">Видео</a></li>
+						<li class="menu__item"><a class="menu__link" href="#callback">Стать совладельцем</a></li>
+						<li class="menu__item"><a class="menu__link" href="#gallery">Галерея</a></li>
+						<li class="menu__item"><a class="menu__link" href="#footer">Контакты</a></li>
+					</ul>
+				</nav>
+				<img src="images/wheat-header.png" alt="" class="header__wheat">
+			</div>
+		</div>
+	</header>
+	<main class="main">
+		<section class="banner">
+			<div class="wrapper">
+				<div class="banner__content">
+					<h1 class="title1 banner__title1">Стань совладельцем завода <br> и получай прибыль!</h1>
+					<button class="btn banner__btn">Узнать условия</button>
+					<button class="watch-btn banner__watch-btn">
+						<div class="watch-btn__icon">
+							<svg width="22" height="25" viewBox="0 0 22 25" fill="none">
+								<path d="M18.63 12.5L3.42389 3.67871V21.3213L18.63 12.5ZM20.705 10.6765C21.0262 10.8604 21.2931 11.1259 21.4787 11.4461C21.6644 11.7663 21.7621 12.1299 21.7621 12.5C21.7621 12.8701 21.6644 13.2337 21.4787 13.5539C21.2931 13.8741 21.0262 14.1396 20.705 14.3235L4.03433 23.9963C2.67197 24.7875 0.803955 23.8836 0.803955 22.1728V2.82723C0.803955 1.11641 2.67197 0.212537 4.03433 1.00376L20.705 10.6765Z" />
+							</svg>
+						</div>
+						<span class="watch-btn__text">Смотреть видео</span>
+					</button>
+				</div>
+			</div>
+		</section>
+		<section class="features" id="features">
+			<div class="wrapper">
+				<div class="features__content">
+					<h2 class="title2 features__title2">Наш завод</h2>
+					<div class="features__list">
+						<div class="features__item">
+							<img class="features__item-icon" src="images/features/factory.svg" alt="">
+							<p class="features__item-text">Варим пиво <br> с <strong>2017 года</strong></p>
+						</div>
+						<div class="features__item">
+							<img class="features__item-icon" src="images/features/area.svg" alt="">
+							<p class="features__item-text">Площадь <br> <strong>2500 м2</strong></p>
+						</div>
+						<div class="features__item">
+							<img class="features__item-icon" src="images/features/beer.svg" alt="">
+							<p class="features__item-text">Продано <br>
+								кружек пива <br> <strong>960 000</strong></p>
+						</div>
+						<div class="features__item features__item_big">
+							<img class="features__item-icon" src="images/features/certificate.svg" alt="">
+							<p class="features__item-text">Паев нашли своих владельцев <br> <strong>86 200 из 100 000</strong></p>
+						</div>
+						<div class="features__item">
+							<img class="features__item-icon" src="images/features/humanity.svg" alt="">
+							<p class="features__item-text">Совладельцев <br> <strong>90 +</strong></p>
+						</div>
+					</div>
+					<img class="features__wheat" src="images/wheat-features.png" alt="">
+				</div>
+			</div>
+		</section>
+		<section class="videos" id="videos">
+			<div class="wrapper">
+				<div class="videos__content">
+					<h2 class="title2 videos__title2">Видео, которое все объясняет</h2>
+					<img class="videos__wheat" src="images/wheat-videos.png" alt="">
+					<div class="videos__container">
+						<div class="videos__list">
+							<div class="videos__item">
+								<button class="watch-btn videos__watch-btn">
+									<div class="watch-btn__icon">
+										<svg width="22" height="25" viewBox="0 0 22 25" fill="none">
+											<path d="M18.63 12.5L3.42389 3.67871V21.3213L18.63 12.5ZM20.705 10.6765C21.0262 10.8604 21.2931 11.1259 21.4787 11.4461C21.6644 11.7663 21.7621 12.1299 21.7621 12.5C21.7621 12.8701 21.6644 13.2337 21.4787 13.5539C21.2931 13.8741 21.0262 14.1396 20.705 14.3235L4.03433 23.9963C2.67197 24.7875 0.803955 23.8836 0.803955 22.1728V2.82723C0.803955 1.11641 2.67197 0.212537 4.03433 1.00376L20.705 10.6765Z" />
+										</svg>
+									</div>
+								</button>								
+								<img class="videos__item-img" src="images/videos/1.jpg" alt="">
+							</div>
+							<div class="videos__item videos__item_active ">
+								<button class="watch-btn videos__watch-btn">
+									<div class="watch-btn__icon">
+										<svg width="22" height="25" viewBox="0 0 22 25" fill="none">
+											<path d="M18.63 12.5L3.42389 3.67871V21.3213L18.63 12.5ZM20.705 10.6765C21.0262 10.8604 21.2931 11.1259 21.4787 11.4461C21.6644 11.7663 21.7621 12.1299 21.7621 12.5C21.7621 12.8701 21.6644 13.2337 21.4787 13.5539C21.2931 13.8741 21.0262 14.1396 20.705 14.3235L4.03433 23.9963C2.67197 24.7875 0.803955 23.8836 0.803955 22.1728V2.82723C0.803955 1.11641 2.67197 0.212537 4.03433 1.00376L20.705 10.6765Z" />
+										</svg>
+									</div>
+								</button>								
+								<img class="videos__item-img" src="images/videos/2.jpg" alt="">
+							</div>
+							<div class="videos__item">
+								<button class="watch-btn videos__watch-btn">
+									<div class="watch-btn__icon">
+										<svg width="22" height="25" viewBox="0 0 22 25" fill="none">
+											<path d="M18.63 12.5L3.42389 3.67871V21.3213L18.63 12.5ZM20.705 10.6765C21.0262 10.8604 21.2931 11.1259 21.4787 11.4461C21.6644 11.7663 21.7621 12.1299 21.7621 12.5C21.7621 12.8701 21.6644 13.2337 21.4787 13.5539C21.2931 13.8741 21.0262 14.1396 20.705 14.3235L4.03433 23.9963C2.67197 24.7875 0.803955 23.8836 0.803955 22.1728V2.82723C0.803955 1.11641 2.67197 0.212537 4.03433 1.00376L20.705 10.6765Z" />
+										</svg>
+									</div>
+								</button>
+								<img class="videos__item-img" src="images/videos/3.jpg" alt="">
+							</div>
+						</div>
+						<div class="videos__dots">
+							<div class="videos__dot"></div>
+							<div class="videos__dot videos__dot_active"></div>
+							<div class="videos__dot"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="callback" id="callback">
+			<div class="wrapper">
+				<div class="callback__content">
+					<h2 class="title2">Оставьте заявку и станьте совладельцем завода!</h2>
+					<form class="callback-form" action="">
+						<input class="callback-form__field" type="text" placeholder="Ваше имя">
+						<input class="callback-form__field" type="text" placeholder="Ваш номер WhatsApp">
+						<input class="btn callback-form__submit" type="submit" value="Оставить заявку">
+					</form>
+					<img class="callback__wheat" src="images/wheat-callback.png" alt="">
+					<img class="callback__arrow" src="images/callback-arrow.svg" alt="">
+				</div>
+			</div>
+		</section>
+		<section class="gallery" id="gallery">
+			<div class="wrapper">
+				<div class="gallery__content">
+					<h2 class="title2 gallery__title2">Галерея</h2>
+					<div class="gallery__list">
+						<img class="gallery__img gallery__img_hide" src="images/gallery/1.jpg" alt="" data-index="1">
+						<img class="gallery__img gallery__img_hide" src="images/gallery/2.jpg" alt="" data-index="2">
+						<img class="gallery__img gallery__img_hide" src="images/gallery/3.jpg" alt="" data-index="3">
+						<img class="gallery__img gallery__img_hide" src="images/gallery/4.jpg" alt="" data-index="4">
+						<img class="gallery__img gallery__img_hide" src="images/gallery/5.jpg" alt="" data-index="5">
+						<img class="gallery__img gallery__img_hide" src="images/gallery/6.jpg" alt="" data-index="6">
+						<img class="gallery__img gallery__img_hide" src="images/gallery/1.jpg" alt="" data-index="7">
+						<img class="gallery__img gallery__img_hide" src="images/gallery/2.jpg" alt="" data-index="8">
+						<img class="gallery__img gallery__img_hide" src="images/gallery/3.jpg" alt="" data-index="9">
+						<img class="gallery__img gallery__img_hide" src="images/gallery/4.jpg" alt="" data-index="10">
+						<img class="gallery__img gallery__img_hide" src="images/gallery/5.jpg" alt="" data-index="11">
+						<img class="gallery__img gallery__img_hide" src="images/gallery/6.jpg" alt="" data-index="12">
+						<img class="gallery__img gallery__img_hide" src="images/gallery/6.jpg" alt="" data-index="13">
+					</div>
+					<button class="gallery__btn">Еще фотографии</button>
+					<img class="gallery__wheat" src="images/wheat-gallery.png" alt="">
+				</div>
+			</div>
+		</section>
+	</main>
+	<footer class="footer" id="footer">
+		<div class="footer__top">
+			<div class="wrapper">
+				<div class="footer__top-content">
+					<form class="callback-form footer__callback-form" action="">
+						<div class="title3 title3_white">Остались вопросы?</div>
+						<div class="title4 title4_white footer__title4">Оставьте заявку и мы свяжемся с вами!</div>
+						<input class="callback-form__field" type="text" placeholder="Ваше имя">
+						<input class="callback-form__field" type="text" placeholder="Ваш номер WhatsApp">
+						<input class="btn callback-form__submit" type="submit" value="Оставить заявку">
+					</form>
+					<div class="footer__conctacts">
+						<div class="title3 title3_white">Наши контакты</div>
+						<div class="social-links footer__social-links">
+							<a class="social-links__link" href="https://www.instagram.com/" target="_blank">
+								<img src="images/icons/instagram.svg" alt="Instagram" class="social-links__icon">
+							</a>
+							<a class="social-links__link" href="https://www.whatsapp.com/" target="_blank">
+								<img src="images/icons/whatsapp.svg" alt="WhatsApp" class="social-links__icon">
+							</a>
+							<a class="social-links__link" href="https://www.youtube.com/" target="_blank">
+								<img src="images/icons/youtube.svg" alt="YouTube" class="social-links__icon">
+							</a>
+						</div>
+						<a class="footer__email" href="mailto:avtorpiva@gmail.com">avtorpiva@gmail.com</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="footer__bottom">
+			<div class="footer__copyright">© 2021 г</div>
+		</div>
+	</footer>
+	<div class="callback-popup">
+		<div class="callback-popup__content">
+
+		</div>
+	</div>
+	<div class="popup-img popup-img_hide">
+		<div class="popup-img__bg">
+			<img src="images/gallery/1.jpg" alt="" class="popup-img__img">
+			<button class="popup-img__prev">
+				<img src="images/icons/prev.svg" alt="">
+			</button>
+			<button class="popup-img__next">
+				<img src="images/icons/next.svg" alt="">
+			</button>
+		</div>
+	</div>
+	<script src="js/main.js"></script>
+</body>
+</html>
