@@ -303,6 +303,7 @@ body {
 
 .videos {
     padding-top: 72px;
+    overflow: hidden;
 }
 
 .videos__content {
