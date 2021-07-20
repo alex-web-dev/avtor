@@ -3,13 +3,14 @@
 <head>
 	<meta charset="utf-8">
 	<title>Пивзавод</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500;700&family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/fonts.css">
-	<link rel="stylesheet" href="css/media.css">
 	<link rel="stylesheet" href="css/styles.css">
+	<link rel="stylesheet" href="css/media.css">
 </head>
 <body>
 	<header class="header">
@@ -19,7 +20,12 @@
 					<img class="logo__img" src="images/logo.png" alt="">
 				</a>
 				<nav class="menu header__menu">
-					<button class="menu__toggle"></button>
+					<button class="menu__toggle">
+						<img src="images/icons/menu-burger.svg" alt="" class="menu__icon">
+					</button>
+					<button class="menu__close">
+						<img src="images/icons/close.svg" alt="" class="menu__icon">
+					</button>
 					<ul class="menu__list">
 						<li class="menu__item"><a class="menu__link" href="#features">Наш завод</a></li>
 						<li class="menu__item"><a class="menu__link" href="#videos">Видео</a></li>
@@ -28,7 +34,7 @@
 						<li class="menu__item"><a class="menu__link" href="#footer">Контакты</a></li>
 					</ul>
 				</nav>
-				<img src="images/wheat-header.png" alt="" class="header__wheat">
+				<div alt="" class="header__wheat"></div>
 			</div>
 		</div>
 	</header>
@@ -38,14 +44,14 @@
 				<div class="banner__content">
 					<h1 class="title1 banner__title1">Стань совладельцем завода <br> и получай прибыль!</h1>
 					<button class="btn banner__btn">Узнать условия</button>
-					<button class="watch-btn banner__watch-btn">
+					<a href="#videos" class="watch-btn banner__watch-btn">
 						<div class="watch-btn__icon">
 							<svg width="22" height="25" viewBox="0 0 22 25" fill="none">
 								<path d="M18.63 12.5L3.42389 3.67871V21.3213L18.63 12.5ZM20.705 10.6765C21.0262 10.8604 21.2931 11.1259 21.4787 11.4461C21.6644 11.7663 21.7621 12.1299 21.7621 12.5C21.7621 12.8701 21.6644 13.2337 21.4787 13.5539C21.2931 13.8741 21.0262 14.1396 20.705 14.3235L4.03433 23.9963C2.67197 24.7875 0.803955 23.8836 0.803955 22.1728V2.82723C0.803955 1.11641 2.67197 0.212537 4.03433 1.00376L20.705 10.6765Z" />
 							</svg>
 						</div>
 						<span class="watch-btn__text">Смотреть видео</span>
-					</button>
+					</a>
 				</div>
 			</div>
 		</section>
@@ -83,61 +89,64 @@
 		<section class="videos" id="videos">
 			<div class="wrapper">
 				<div class="videos__content">
-					<h2 class="title2 videos__title2">Видео, которое все объясняет</h2>
-					<img class="videos__wheat" src="images/wheat-videos.png" alt="">
-					<div class="videos__container">
-						<div class="videos__list">
-							<div class="videos__item">
-								<button class="watch-btn videos__watch-btn">
-									<div class="watch-btn__icon">
-										<svg width="22" height="25" viewBox="0 0 22 25" fill="none">
-											<path d="M18.63 12.5L3.42389 3.67871V21.3213L18.63 12.5ZM20.705 10.6765C21.0262 10.8604 21.2931 11.1259 21.4787 11.4461C21.6644 11.7663 21.7621 12.1299 21.7621 12.5C21.7621 12.8701 21.6644 13.2337 21.4787 13.5539C21.2931 13.8741 21.0262 14.1396 20.705 14.3235L4.03433 23.9963C2.67197 24.7875 0.803955 23.8836 0.803955 22.1728V2.82723C0.803955 1.11641 2.67197 0.212537 4.03433 1.00376L20.705 10.6765Z" />
-										</svg>
-									</div>
-								</button>								
-								<img class="videos__item-img" src="images/videos/1.jpg" alt="">
+					<div class="videos__main">
+						<h2 class="title2 videos__title2">Видео, которое все объясняет</h2>
+						<div class="videos__container">
+							<div class="videos__list">
+								<div class="videos__item">
+									<button class="watch-btn videos__watch-btn" data-url="https://www.youtube.com/embed/y3Y8uTixQ8c">
+										<div class="watch-btn__icon">
+											<svg width="22" height="25" viewBox="0 0 22 25" fill="none">
+												<path d="M18.63 12.5L3.42389 3.67871V21.3213L18.63 12.5ZM20.705 10.6765C21.0262 10.8604 21.2931 11.1259 21.4787 11.4461C21.6644 11.7663 21.7621 12.1299 21.7621 12.5C21.7621 12.8701 21.6644 13.2337 21.4787 13.5539C21.2931 13.8741 21.0262 14.1396 20.705 14.3235L4.03433 23.9963C2.67197 24.7875 0.803955 23.8836 0.803955 22.1728V2.82723C0.803955 1.11641 2.67197 0.212537 4.03433 1.00376L20.705 10.6765Z" />
+											</svg>
+										</div>
+									</button>								
+									<img class="videos__item-img" src="images/videos/1.jpg" alt="">
+								</div>
+								<div class="videos__item videos__item_active ">
+									<button class="watch-btn videos__watch-btn" data-url="https://www.youtube.com/embed/6Yg-n-B4_UU">
+										<div class="watch-btn__icon">
+											<svg width="22" height="25" viewBox="0 0 22 25" fill="none">
+												<path d="M18.63 12.5L3.42389 3.67871V21.3213L18.63 12.5ZM20.705 10.6765C21.0262 10.8604 21.2931 11.1259 21.4787 11.4461C21.6644 11.7663 21.7621 12.1299 21.7621 12.5C21.7621 12.8701 21.6644 13.2337 21.4787 13.5539C21.2931 13.8741 21.0262 14.1396 20.705 14.3235L4.03433 23.9963C2.67197 24.7875 0.803955 23.8836 0.803955 22.1728V2.82723C0.803955 1.11641 2.67197 0.212537 4.03433 1.00376L20.705 10.6765Z" />
+											</svg>
+										</div>
+									</button>								
+									<img class="videos__item-img" src="images/videos/2.jpg" alt="">
+								</div>
+								<div class="videos__item">
+									<button class="watch-btn videos__watch-btn" data-url="https://www.youtube.com/embed/xx-rhVlZBQs">
+										<div class="watch-btn__icon">
+											<svg width="22" height="25" viewBox="0 0 22 25" fill="none">
+												<path d="M18.63 12.5L3.42389 3.67871V21.3213L18.63 12.5ZM20.705 10.6765C21.0262 10.8604 21.2931 11.1259 21.4787 11.4461C21.6644 11.7663 21.7621 12.1299 21.7621 12.5C21.7621 12.8701 21.6644 13.2337 21.4787 13.5539C21.2931 13.8741 21.0262 14.1396 20.705 14.3235L4.03433 23.9963C2.67197 24.7875 0.803955 23.8836 0.803955 22.1728V2.82723C0.803955 1.11641 2.67197 0.212537 4.03433 1.00376L20.705 10.6765Z" />
+											</svg>
+										</div>
+									</button>
+									<img class="videos__item-img" src="images/videos/3.jpg" alt="">
+								</div>
 							</div>
-							<div class="videos__item videos__item_active ">
-								<button class="watch-btn videos__watch-btn">
-									<div class="watch-btn__icon">
-										<svg width="22" height="25" viewBox="0 0 22 25" fill="none">
-											<path d="M18.63 12.5L3.42389 3.67871V21.3213L18.63 12.5ZM20.705 10.6765C21.0262 10.8604 21.2931 11.1259 21.4787 11.4461C21.6644 11.7663 21.7621 12.1299 21.7621 12.5C21.7621 12.8701 21.6644 13.2337 21.4787 13.5539C21.2931 13.8741 21.0262 14.1396 20.705 14.3235L4.03433 23.9963C2.67197 24.7875 0.803955 23.8836 0.803955 22.1728V2.82723C0.803955 1.11641 2.67197 0.212537 4.03433 1.00376L20.705 10.6765Z" />
-										</svg>
-									</div>
-								</button>								
-								<img class="videos__item-img" src="images/videos/2.jpg" alt="">
+							<div class="videos__dots">
+								<div class="videos__dot"></div>
+								<div class="videos__dot videos__dot_active"></div>
+								<div class="videos__dot"></div>
 							</div>
-							<div class="videos__item">
-								<button class="watch-btn videos__watch-btn">
-									<div class="watch-btn__icon">
-										<svg width="22" height="25" viewBox="0 0 22 25" fill="none">
-											<path d="M18.63 12.5L3.42389 3.67871V21.3213L18.63 12.5ZM20.705 10.6765C21.0262 10.8604 21.2931 11.1259 21.4787 11.4461C21.6644 11.7663 21.7621 12.1299 21.7621 12.5C21.7621 12.8701 21.6644 13.2337 21.4787 13.5539C21.2931 13.8741 21.0262 14.1396 20.705 14.3235L4.03433 23.9963C2.67197 24.7875 0.803955 23.8836 0.803955 22.1728V2.82723C0.803955 1.11641 2.67197 0.212537 4.03433 1.00376L20.705 10.6765Z" />
-										</svg>
-									</div>
-								</button>
-								<img class="videos__item-img" src="images/videos/3.jpg" alt="">
-							</div>
-						</div>
-						<div class="videos__dots">
-							<div class="videos__dot"></div>
-							<div class="videos__dot videos__dot_active"></div>
-							<div class="videos__dot"></div>
 						</div>
 					</div>
+					<img class="videos__wheat" src="images/wheat-videos.png" alt="">
 				</div>
 			</div>
 		</section>
 		<section class="callback" id="callback">
 			<div class="wrapper">
 				<div class="callback__content">
-					<h2 class="title2">Оставьте заявку и станьте совладельцем завода!</h2>
-					<form class="callback-form" action="">
+					<h2 class="title2 callback__title2">Оставьте заявку и станьте совладельцем завода!</h2>
+					<form class="callback-form callback__callback-form" action="">
 						<input class="callback-form__field" type="text" placeholder="Ваше имя">
 						<input class="callback-form__field" type="text" placeholder="Ваш номер WhatsApp">
 						<input class="btn callback-form__submit" type="submit" value="Оставить заявку">
 					</form>
 					<img class="callback__wheat" src="images/wheat-callback.png" alt="">
 					<img class="callback__arrow" src="images/callback-arrow.svg" alt="">
+					<img class="callback__arrow callback__arrow_second" src="images/callback-arrow.svg" alt="">
 				</div>
 			</div>
 		</section>
@@ -146,22 +155,30 @@
 				<div class="gallery__content">
 					<h2 class="title2 gallery__title2">Галерея</h2>
 					<div class="gallery__list">
-						<img class="gallery__img gallery__img_hide" src="images/gallery/1.jpg" alt="" data-index="1">
-						<img class="gallery__img gallery__img_hide" src="images/gallery/2.jpg" alt="" data-index="2">
-						<img class="gallery__img gallery__img_hide" src="images/gallery/3.jpg" alt="" data-index="3">
-						<img class="gallery__img gallery__img_hide" src="images/gallery/4.jpg" alt="" data-index="4">
-						<img class="gallery__img gallery__img_hide" src="images/gallery/5.jpg" alt="" data-index="5">
-						<img class="gallery__img gallery__img_hide" src="images/gallery/6.jpg" alt="" data-index="6">
-						<img class="gallery__img gallery__img_hide" src="images/gallery/1.jpg" alt="" data-index="7">
-						<img class="gallery__img gallery__img_hide" src="images/gallery/2.jpg" alt="" data-index="8">
-						<img class="gallery__img gallery__img_hide" src="images/gallery/3.jpg" alt="" data-index="9">
-						<img class="gallery__img gallery__img_hide" src="images/gallery/4.jpg" alt="" data-index="10">
-						<img class="gallery__img gallery__img_hide" src="images/gallery/5.jpg" alt="" data-index="11">
-						<img class="gallery__img gallery__img_hide" src="images/gallery/6.jpg" alt="" data-index="12">
-						<img class="gallery__img gallery__img_hide" src="images/gallery/6.jpg" alt="" data-index="13">
+						<img class="gallery__img gallery__img_hide" src="images/gallery/1.jpeg" alt="" data-index="1">
+						<img class="gallery__img gallery__img_hide" src="images/gallery/2.jpeg" alt="" data-index="2">
+						<img class="gallery__img gallery__img_hide" src="images/gallery/3.jpeg" alt="" data-index="3">
+						<img class="gallery__img gallery__img_hide" src="images/gallery/4.jpeg" alt="" data-index="4">
+						<img class="gallery__img gallery__img_hide" src="images/gallery/5.jpeg" alt="" data-index="5">
+						<img class="gallery__img gallery__img_hide" src="images/gallery/6.jpeg" alt="" data-index="6">
+						<img class="gallery__img gallery__img_hide" src="images/gallery/7.jpeg" alt="" data-index="7">
+						<img class="gallery__img gallery__img_hide" src="images/gallery/8.jpeg" alt="" data-index="8">
+						<img class="gallery__img gallery__img_hide" src="images/gallery/9.jpeg" alt="" data-index="9">
+						<img class="gallery__img gallery__img_hide" src="images/gallery/10.jpeg" alt="" data-index="10">
+						<img class="gallery__img gallery__img_hide" src="images/gallery/11.jpeg" alt="" data-index="11">
+						<img class="gallery__img gallery__img_hide" src="images/gallery/12.jpeg" alt="" data-index="12">
+						<img class="gallery__img gallery__img_hide" src="images/gallery/13.jpeg" alt="" data-index="13">
+						<img class="gallery__img gallery__img_hide" src="images/gallery/14.jpeg" alt="" data-index="13">
+						<img class="gallery__img gallery__img_hide" src="images/gallery/15.jpeg" alt="" data-index="13">
+						<img class="gallery__img gallery__img_hide" src="images/gallery/16.jpeg" alt="" data-index="13">
+						<img class="gallery__img gallery__img_hide" src="images/gallery/17.jpeg" alt="" data-index="13">
+						<img class="gallery__img gallery__img_hide" src="images/gallery/18.jpeg" alt="" data-index="13">
+						<img class="gallery__img gallery__img_hide" src="images/gallery/19.jpeg" alt="" data-index="13">
+						<img class="gallery__img gallery__img_hide" src="images/gallery/20.jpeg" alt="" data-index="13">
 					</div>
 					<button class="gallery__btn">Еще фотографии</button>
 					<img class="gallery__wheat" src="images/wheat-gallery.png" alt="">
+					<img class="gallery__wheat gallery__wheat_mobile" src="images/wheat-gallery-mobile.png" alt="">
 				</div>
 			</div>
 		</section>
@@ -170,23 +187,23 @@
 		<div class="footer__top">
 			<div class="wrapper">
 				<div class="footer__top-content">
-					<form class="callback-form footer__callback-form" action="">
+					<form class="callback-form callback-form_vertical footer__callback-form" action="">
 						<div class="title3 title3_white">Остались вопросы?</div>
 						<div class="title4 title4_white footer__title4">Оставьте заявку и мы свяжемся с вами!</div>
 						<input class="callback-form__field" type="text" placeholder="Ваше имя">
 						<input class="callback-form__field" type="text" placeholder="Ваш номер WhatsApp">
 						<input class="btn callback-form__submit" type="submit" value="Оставить заявку">
 					</form>
-					<div class="footer__conctacts">
+					<div class="footer__contacts">
 						<div class="title3 title3_white">Наши контакты</div>
 						<div class="social-links footer__social-links">
-							<a class="social-links__link" href="https://www.instagram.com/" target="_blank">
+							<a class="social-links__link" href="https://www.instagram.com/@budni_pivovara" target="_blank">
 								<img src="images/icons/instagram.svg" alt="Instagram" class="social-links__icon">
 							</a>
-							<a class="social-links__link" href="https://www.whatsapp.com/" target="_blank">
+							<a class="social-links__link" href="https://api.whatsapp.com/send/?phone=+79087736376 " target="_blank">
 								<img src="images/icons/whatsapp.svg" alt="WhatsApp" class="social-links__icon">
 							</a>
-							<a class="social-links__link" href="https://www.youtube.com/" target="_blank">
+							<a class="social-links__link" href="https://www.youtube.com/channel/UCRF-uUVEpRYyf-GOs6QkZWA" target="_blank">
 								<img src="images/icons/youtube.svg" alt="YouTube" class="social-links__icon">
 							</a>
 						</div>
@@ -201,12 +218,22 @@
 	</footer>
 	<div class="callback-popup">
 		<div class="callback-popup__content">
-
+			<div class="title2 callback-popup__title3">Оставьте заявку и станьте совладельцем завода!</div>
+			<form class="callback-form callback-form_vertical callback-popup__form" action="">
+				<input class="callback-form__field" type="text" placeholder="Ваше имя">
+				<input class="callback-form__field" type="text" placeholder="Ваш номер WhatsApp">
+				<input class="btn callback-form__submit" type="submit" value="Оставить заявку">
+			</form>
+			<button class="callback-popup__close">
+				<svg width="30" height="30" viewBox="0 0 30 30" fill="none">
+					<path d="M3.44058 0.561424C3.06337 0.197107 2.55817 -0.00448123 2.03377 7.56053e-05C1.50938 0.00463244 1.00776 0.214971 0.636939 0.585787C0.266123 0.956603 0.0557846 1.45823 0.0512277 1.98262C0.0466709 2.50701 0.24826 3.01222 0.612576 3.38942L12.1626 14.9394L0.610576 26.4894C0.419555 26.6739 0.267191 26.8946 0.162373 27.1386C0.0575548 27.3826 0.00238315 27.6451 7.55141e-05 27.9106C-0.00223212 28.1762 0.0483709 28.4395 0.148933 28.6853C0.249494 28.9311 0.398001 29.1544 0.585786 29.3422C0.773571 29.53 0.996876 29.6785 1.24267 29.7791C1.48846 29.8796 1.75182 29.9302 2.01738 29.9279C2.28294 29.9256 2.54538 29.8704 2.78938 29.7656C3.03339 29.6608 3.25408 29.5084 3.43858 29.3174L14.9906 17.7674L26.5406 29.3174C26.9178 29.6817 27.423 29.8833 27.9474 29.8788C28.4718 29.8742 28.9734 29.6639 29.3442 29.2931C29.715 28.9222 29.9254 28.4206 29.9299 27.8962C29.9345 27.3718 29.7329 26.8666 29.3686 26.4894L17.8186 14.9394L29.3686 3.38942C29.7329 3.01222 29.9345 2.50701 29.9299 1.98262C29.9254 1.45823 29.715 0.956603 29.3442 0.585787C28.9734 0.214971 28.4718 0.00463244 27.9474 7.56053e-05C27.423 -0.00448123 26.9178 0.197107 26.5406 0.561424L14.9906 12.1114L3.44058 0.559424V0.561424Z" fill="black" fill-opacity="0.7"/>
+				</svg>
+			</button>
 		</div>
 	</div>
 	<div class="popup-img popup-img_hide">
 		<div class="popup-img__bg">
-			<img src="images/gallery/1.jpg" alt="" class="popup-img__img">
+			<img src="images/gallery/1.jpeg" alt="" class="popup-img__img">
 			<button class="popup-img__prev">
 				<img src="images/icons/prev.svg" alt="">
 			</button>
